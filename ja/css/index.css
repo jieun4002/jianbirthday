@@ -1,0 +1,62 @@
+
+p{
+    margin: 0;
+}
+image{display: block;}
+
+
+body{
+    max-width: 440px;
+    width: 100%;
+    display: flex;
+    margin: 0px auto;
+    justify-content: center;
+     font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.page-1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #DBA5FA;
+    padding: 100px 15px 0;
+    position: relative;
+}
+.page-1 h1{
+   font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 35px;
+  color: #DBA5FA;
+  margin-bottom: 60px;
+}
+
+.page-1 img{
+    width: 100%;
+}
+
+.page-1 .image p{
+    font-size: 80px;
+    width: 100%;
+    margin-top: -100px;
+    line-height: 1;
+    font-weight: bold;
+    font-family: "Story Script", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+.page-1 .info{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.page-1 .info p{
+    
+}
