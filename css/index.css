@@ -1,3 +1,47 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2') format('woff2');
+    /* font-weight: 400; */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NoonnuBasicGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noon-2410@1.0/NoonnuBasicGothicRegular.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'MaruBuri';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2);
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'MaruBuri';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.woff2);
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'MaruBuri';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.woff2);
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Cafe24ClassicType';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Cafe24ClassicType-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ChosunIlboMyungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
 
 p{
     margin: 0;
@@ -11,32 +55,85 @@ body{
     display: flex;
     margin: 0px auto;
     justify-content: center;
-     font-family: "Noto Sans KR", sans-serif;
+     font-family: 'Pretendard',"Noto Sans KR", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     flex-direction: column;
     line-height: 1;
 }
+div.page{
+    height: 100vh;
+    padding: 30px 20px 0;
+}
 
 .page-1 {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     text-align: center;
-    color: #DBA5FA;
-    padding: 100px 15px 0;
+    color: #5C1FC4;
     position: relative;
 }
-.page-1 h1{
-   font-family: "Lobster", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  text-align: center;
-  font-size: 35px;
-  color: #DBA5FA;
-  margin-bottom: 60px;
+.page-1 span.sub{
+    font-family: 'Cafe24ClassicType';
+    font-size: 14px;
+    position: relative;
 }
 
+.page-1 span.sub::before{
+    content: "";
+    width: 100px;
+    height: 1px;
+    background-color: #5C1FC4;
+    display: block;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+}
+
+.page-1 span.sub::after{
+    content: "";
+    width: 100px;
+    height: 1px;
+    background-color: #5C1FC4;
+    display: block;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    right: 0;
+}
+.page-1 h1{
+    font-family: 'ChosunIlboMyungjo';
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 50px;
+    color: #B582FF;
+    margin: 65px 0 60px;
+    letter-spacing: -2px
+}
+.page-1 .image {
+    position: relative;
+}
+.page-1 .image span{
+    position: absolute;
+    display: block;
+}
+.page-1 .image span.deco1{
+      width: 80px;
+    bottom: 54px;
+    right: 15px
+   
+}
+.page-1 .image span.deco2{
+    right: 30px;
+    top: -30px;
+    width: 120px;
+}
+.page-1 .image span.deco3{
+    width: 90px;
+    top: 105px;
+    left: -21px;
+}
 .page-1 img{
     width: 100%;
 }
@@ -47,16 +144,97 @@ body{
     margin-top: -100px;
     line-height: 1;
     font-weight: bold;
-    font-family: "Story Script", sans-serif;
+    font-family: "Italianno", cursive;
     font-weight: 400;
     font-style: normal;
+    color: #B582FF;
 
 }
 .page-1 .info{
     text-align: center;
     margin-top: 50px;
+     color: #B582FF;;
 }
 
-.page-1 .info p{
-    
+.page-1 .info p.name{
+    font-family: 'MaruBuri';
+    font-size: 25px;
+    margin-bottom: 15px;
+   
+}
+
+.page-1 .info p.date::before{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: #B582FF;
+    left: 50%;
+    margin: 0 auto 15px;
+}
+
+.page-2{
+    background-color: #333;
+}
+
+.page-3{
+    background-color: aqua;
+}
+
+.page-3 .calendar{
+    text-align: center;
+    background-color: #eee;
+    padding: 20px 20px 30px;
+    font-family: 'MaruBuri';
+}
+.page-3 .calendar .month{
+    font-size: 22px;
+    padding: 10px 0;
+    color: #5C1FC4;
+}
+.page-3 .week{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.page-3 .week .day:first-child{
+    color: #5C1FC4;
+}
+
+.page-3 .date{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page-3 .date div{
+    display: flex;
+    width: 100%;
+    justify-content: center;  
+}
+
+.page-3 .date div.weekly{
+    margin-bottom: 15px;
+}
+.page-3 .date div.date5{margin: 0;}
+.page-3 .date div.weekly div{
+    font-size: 15px;
+}
+.page-3 .date div.weekly div:first-child{
+    color: #5C1FC4;
+}
+.page-3 .date .weekly .dueday{color: #eee; position: relative; z-index: 1;}
+.page-3 .date .weekly .dueday::after{
+   
+    content: "";
+    width: 31px;
+    height: 31px;
+    display: block;
+    background-color: #5C1FC4;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -999;
+    top: -9px;
+    bottom: 0;
+    left: 5px;
 }
