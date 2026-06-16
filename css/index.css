@@ -62,7 +62,7 @@ body{
     line-height: 1;
 }
 div.page{
-    height: 100vh;
+  
     padding: 30px 20px 0;
 }
 
@@ -106,9 +106,9 @@ div.page{
     font-weight: 400;
     font-style: normal;
     text-align: center;
-    font-size: 50px;
+    font-size: 45px;
     color: #B582FF;
-    margin: 65px 0 60px;
+    margin: 50px 0 55px;
     letter-spacing: -2px
 }
 .page-1 .image {
@@ -158,34 +158,125 @@ div.page{
 
 .page-1 .info p.name{
     font-family: 'MaruBuri';
-    font-size: 25px;
+    font-size: 22px;
     margin-bottom: 15px;
    
 }
-
+.page-1 .info p.date{
+    letter-spacing: -0.5px;
+}
 .page-1 .info p.date::before{
     content: "";
     display: block;
-    width: 40px;
+    width: 30px;
     height: 2px;
     background: #B582FF;
     left: 50%;
     margin: 0 auto 15px;
 }
 
-.page-2{
-    background-color: #333;
+.page-2.page{
+    text-align: center;
+    padding: 100px 0 0 0;
 }
 
-.page-3{
-    background-color: aqua;
+.page-2 .title p{
+    color: #5C1FC4;
+    font-family: 'MaruBuri';
+
+    font-size: 15px;}
+
+.page-2  .image-box{
+    margin-top: 40px;
+}
+.page-2  .image-box img{
+    width: 100%;
+}
+
+.page-2 .text-box{
+    padding: 50px 20px;
+    width: 270px;
+    margin: 0 auto;
+}
+
+.page-2 .text-box p{
+    font-family: 'MaruBuri';
+    font-size: 15px;
+    color: #858585;
+    margin-bottom: 25px;
+    line-height: 1.9;
+}
+
+.page-2 .text-box p:last-child{
+    margin-top: 50px;
+    position: relative;
+}
+
+.page-2 .text-box p:last-child::after{
+    content: "";
+    position: absolute;
+    width:25px;
+    height: 1px;
+    background-color: #858585;
+    left: 45%;
+    top: -20px;
+}
+
+.page-2 .text-box p span{
+    font-size: 14px;
+}
+.page-2 .text-box p span:first-child{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+div.page-3.page{
+    height: auto;
+}
+.page-3 .loca-info {
+    text-align: center;
+}
+
+.page-3 .loca-info p:first-child{color: #5C1FC4; font-size: 18px; font-weight: 600; margin-bottom: 15px;}
+.page-3 .loca-info p.time{color: #6B6B6B;}
+.page-3 .loca-info p.location{
+    color: #6B6B6B;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.page-3 .loca-info p.location span{
+    display: block;
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+.page-3 button{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: auto;
+}
+.page-3 .copy-btn{
+    color: #529CFF;
+    margin-left: 5px;
+}
+
+.page-3 .image{
+    margin-top: 50px;
+}
+.page-3 .image img{
+    width: 100%;
+}
+.page-3 .calendar{
+    text-align: center;
+    background-color: #fff;
+    padding: 20px 20px 30px;
+    font-family: 'MaruBuri';
 }
 
 .page-3 .calendar{
-    text-align: center;
-    background-color: #eee;
-    padding: 20px 20px 30px;
-    font-family: 'MaruBuri';
+    margin-top: 10px;
 }
 .page-3 .calendar .month{
     font-size: 22px;
@@ -195,7 +286,7 @@ div.page{
 .page-3 .week{
     display: flex;
     justify-content: space-around;
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 .page-3 .week .day:first-child{
@@ -214,7 +305,7 @@ div.page{
 }
 
 .page-3 .date div.weekly{
-    margin-bottom: 15px;
+    margin-bottom: 22px;
 }
 .page-3 .date div.date5{margin: 0;}
 .page-3 .date div.weekly div{
@@ -234,7 +325,9 @@ div.page{
     border-radius: 50%;
     position: absolute;
     z-index: -999;
-    top: -9px;
-    bottom: 0;
-    left: 5px;
+      top: 0;
+    /* bottom: 0; */
+    left: 0;
+    transform: translate(20%, -30%);
 }
+

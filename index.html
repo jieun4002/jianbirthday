@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Lobster&family=Niconne&family=Noto+Sans+KR:wght@100..900&family=Story+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="/css/index.css">
     <title>지안이의 첫번째 생일파티에 초대합니다!</title>
 </head>
 <body>
@@ -14,10 +15,10 @@
         <span class="sub">1st Birthday</span>
         <h1>Happy BrithDay</h1>
         <div class="image">
-            <span class="deco deco1"><img src="images/deco.png" alt="deco"></span>
-            <span class="deco deco2"><img src="images/deco.png" alt="deco"></span>
-            <span class="deco deco3"><img src="images/deco.png" alt="deco"></span>
-            <img src="images/jian-1.png" alt="jian image">
+            <span class="deco deco1"><img src="/images/deco.png" alt="deco"></span>
+            <span class="deco deco2"><img src="/images/deco.png" alt="deco"></span>
+            <span class="deco deco3"><img src="/images/deco.png" alt="deco"></span>
+            <img src="/images/jian-1.png" alt="jian image">
             <p>My 1st year</p>
         </div>
         <div class="info">
@@ -26,11 +27,35 @@
         </div>       
     </div>
     <div class="page-2 page">
-
+        <div class="title">
+            <p>지안이의 첫번째 생일파티에 초대합니다 💌</p>
+        </div>
+        <div class="image-box">
+            <img src="images/page2-image.jpg" alt="지안">
+        </div>
+        <div class="text-box">
+            <p>지안이가 무럭무럭 자라 <br>어느덧 첫번째 생일을 맞이하였습니다.
+            <p>지안이에게 사랑과 관심을 주신 분들께 <br>감사 인사를 전하고자<br>
+                작은 자리를 마련하였습니다.<br></p>
+            <p>지안이의 첫번째 생일이라는 뜻 깊은날 <br>함께 해주시어 자리를 더욱 더 빛내주시면 감사하겠습니다.</p>
+            
+             <p><span>아빠 안태일</span><span>엄마 김지은</span></p>
+        </div>
     </div>
     <div class="page-3 page">
+        <div class="loca-info">
+            <p>돌잔치 안내</p>
+            <p class="location">하이게이트
+                <span>경기 화성시 동탄구 동탄장지천6길 9 101호<button type="button" class="copy-btn">복사</button></span>
+                
+            </p>
+
+            <p class="time">2026년 6월 27일 토요일 오후5:00</p>
+        
+            
+        </div>
         <div class="image">
-            <img src="" alt="">
+            <img src="images/page3-imag.jpg" alt="">
         </div>
         <div class="calendar">
             <div class="month">6월</div>
@@ -96,3 +121,21 @@
 
 </body>
 </html>
+
+<script>
+    // import jquery from 'https://esm.sh/jquery@3.5.1';
+//URL 복사
+	function copyClip(url){
+		var $temp = $('<input>');
+		$('body').append($temp);
+		$temp.val(url).select();
+		document.execCommand('copy');
+		$temp.remove();
+		alert('URL이 복사되었습니다.');
+	}
+	$('.copy-btn').on('click', function(e){
+		e.preventDefault();
+		var link = location.href;
+		copyClip('경기 화성시 동탄구 동탄장지천6길 9 101호');
+	});
+</script>
